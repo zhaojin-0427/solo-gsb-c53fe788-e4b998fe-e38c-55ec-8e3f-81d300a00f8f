@@ -1,0 +1,8 @@
+services:
+  signal-plan:
+    build: .
+    image: intersection-signal-planner:latest
+    container_name: intersection-signal-planner
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
